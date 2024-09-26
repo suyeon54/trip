@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+    
+</head>
+<body>
+    <header class="header_sub">
+    </header>
+
+    <div id="visual_sub">
+        <div class="centerbox1200">
+          <div class="sub_text">
+            투어&티켓
+          </div>
+          <div class="bread">
+            <a href=""></a>
+          </div>
+        </div>
+    </div>
+    
+    <div id="section_box_sub"></div>
+
+    <footer></footer>
+
+
+
+    <div class="floating_menu sub">
+        <a href="#section1">
+            <i class="fa-regular fa-hourglass-half"></i>
+            <span>할인가 보기</span>
+        </a>
+        <a href="#section2">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+            <span>App</span>
+        </a>
+        <a href="#section3">
+            <i class="fa-solid fa-circle-question"></i>
+            <span>채팅문의</span>
+        </a>
+        <a href="#visual">
+            <i class="fa-solid fa-arrow-up"></i>
+            <span>TOP</span>
+        </a>
+    </div>
+
+
+
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".section2Slide", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        
+        1200: {
+          slidesPerView: 3,  //브라우저가 768보다 클 때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
+        },
+      },
+    });
+
+
+
+  </script>
+</body>
+</html>

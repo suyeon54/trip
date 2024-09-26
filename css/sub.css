@@ -1,0 +1,72 @@
+/* sub page */
+
+
+header.header_sub  {background:url(../images/ticket-.jpg);background-size: cover; height: 40%; top: 0;}
+header.header_sub h1 {width: 125px; height: 70px; margin: 0 auto;}
+header.header_sub h1 img{width: 100px; height: 25px;margin: 20px auto;}
+header.header_sub nav {}
+header.header_sub nav .gnb {display: flex; gap: 5px; border-bottom: 3px solid #fff;}
+header.header_sub nav .gnb li {font-size: 20px;}
+header.header_sub nav .gnb > li:nth-child(1) { background: rgba(255, 255, 255,0.2);border-radius: 15px 15px 0 0;} 
+header.header_sub nav .gnb > li:nth-child(2) { background: rgba(255, 255, 255,0.2);border-radius: 15px 15px 0 0;} 
+header.header_sub nav .gnb > li:nth-child(3) { background: rgba(255, 255, 255,0.2);border-radius: 15px 15px 0 0;} 
+header.header_sub nav .gnb > li:nth-child(4) { background: rgba(255, 255, 255,0.2);border-radius: 15px 15px 0 0;} 
+header.header_sub nav .gnb li:nth-child(4) a {} 
+header.header_sub nav .gnb li a {height: 100%;color: #fff;}
+header.header_sub .spotmenu {display: flex; margin-left: 50px;} 
+header.header_sub .spotmenu a {padding: 10px 10px; position: relative; color: #fff;}
+header.header_sub  .spotmenu a:before {content: ""; position: absolute; width: 1px; height: 12px; background: #fff; left: 0;top: 48%; transform: translateY(-50%);}
+
+header.header_sub .spotmenu a:first-child::before {display: none;} 
+
+/* 투어&티켓 */
+
+
+
+
+/* 로그인 */
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .company .text_box .ex {margin-bottom: 3vw;}
+    .company .text_box strong {font-size: 4.2vw;margin-bottom: 3vw;}
+    .company .text_box p {font-size: 2vw;}
+
+    .company .img_box figure.img2 {width:400px; height: 450px; }
+}
+@media screen and (max-width: 768px) {
+    .mo_menu.sub {border: 1px solid #222;}
+    .mo_menu.sub span {background: rgba(34,34,34,1);}
+    .mo_menu.sub span::before,
+    .mo_menu.sub span::after {background: #222;}
+
+    .mo_menu.sub.on {border: 1px solid #fff;}
+    .mo_menu.sub.on span {background: rgba(34,34,34,0)}
+    .mo_menu.sub.on span::before,
+    .mo_menu.sub.on span::after {background: #fff;}
+
+
+    .company .centerbox1200 {flex-direction: column;}
+    .company .text_box {flex-basis: 0;}
+    .company .img_box {flex-basis: 0;}
+    
+    .company .text_box strong {font-size: 30px;}
+    .company .text_box p {font-size: 16px;}
+
+    .company .img_box figure.img1 {width:auto; height: 60vw; }
+}
+
+@media screen and (max-width: 520px) {
+    #visual_sub .sub_text {letter-spacing: 1vw;}
+
+    #section_box_sub .snb ul {flex-wrap: wrap; }
+    #section_box_sub .snb ul li {width: 30%; text-align: center;}
+    #section_box_sub .snb ul li a {border: 0}
+
+    .company .img_box {justify-content: center;}
+    .company .img_box figure.img1 {display: none;}
+    .company .img_box figure.img2 {width: calc(100vw - 40px); height: 75vw;}
+}

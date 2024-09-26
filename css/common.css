@@ -1,0 +1,45 @@
+/* html {font-size: 10px;} */ /* = 62.5% */
+.centerbox1200 {max-width: 1200px; margin: 0 auto;}
+
+header {position: absolute; width: 100%; z-index: 2; }
+header .centerbox1200 { position: relative;}
+header h1 {width: 125px; height: 70px; margin: 0 auto;}
+header h1 img{width: 100px; height: 25px;margin: 20px auto;}
+header nav {height: 50px;}
+header nav .gnb {display: flex; gap: 5px; border-bottom: 3px solid #fff; justify-content: center;}
+header nav .gnb li {font-size: 20px; position: relative; flex-basis:0px; flex-grow: 1; text-align: center;}
+header nav .gnb > li:nth-child(1) {background: rgba(255, 255, 255,0.2);border-radius: 15px 15px 0 0;} 
+header nav .gnb > li:nth-child(2) {background: rgba(255, 255, 255,0.2);border-radius: 15px 15px 0 0;} 
+header nav .gnb > li:nth-child(3) {background: rgba(255, 255, 255,0.2);border-radius: 15px 15px 0 0;} 
+header nav .gnb > li:nth-child(4) {background: rgba(255, 255, 255,0.2);border-radius: 15px 15px 0 0;} 
+header nav .gnb > li > a {padding: 15px 90px; display: block; }
+header nav .gnb li a {height: 100%;color: #fff;}
+header nav .gnb li .lnb {position: absolute; width: 100%; height: 250px; left: 0; top: 50px; text-align: center;background: rgba(255, 255, 255,0.2)}
+header nav .gnb li .lnb {display: none;}
+header nav .gnb li:hover .lnb {display: block;}
+header nav .gnb li .lnb li:hover a {background: #fff; color: #000;}
+header nav .gnb li .lnb li a {padding: 20px 0; display: block;}
+
+header .spotmenu {display: flex; margin-left: 50px; position: absolute; right: 0; top: 0;} 
+header .spotmenu a {padding: 10px 10px; position: relative; color: #fff;}
+header .spotmenu a:before {content: ""; position: absolute; width: 1px; height: 12px; background: #fff; left: 0;top: 48%; transform: translateY(-50%);}
+
+header .spotmenu a:first-child::before {display: none;} 
+
+
+.floating_menu {position: fixed; z-index: 10; top: 300px; right: 0px; display: flex; flex-direction: column; align-items: flex-end; width: 70px;transition: 0.7s;}
+
+
+.floating_menu a {height: 50px; background: #fff; border-radius: 50px; margin-bottom: 20px; display: flex; justify-content: center;align-items: center; padding: 0 0px; width: 50px; box-shadow: 4px 4px 20px rgba(0,0,0,0.15); margin-right: 20px;transition: 0.7s; }
+/* .floating_menu:hover a {margin-right: 20px;} */
+/* .floating_menu a[href="#section2"] {background: #000;} */
+.floating_menu a i {font-size: 30px; margin-right: 0px;transition: 0.7s;}
+.floating_menu a span {max-width: 0; overflow: hidden; white-space: nowrap; transition: 0.7s;}
+
+.floating_menu a:hover {padding: 0 10px; width: 150px;}
+.floating_menu a:hover i {margin-right: 10px;}
+.floating_menu a:hover span {max-width: 150px;}
+
+.floating_menu a.on {padding: 0 10px; width: 150px;}
+.floating_menu a.on i {margin-right: 10px; color: lightseagreen;}
+.floating_menu a.on span {max-width: 150px; color: lightseagreen;}
